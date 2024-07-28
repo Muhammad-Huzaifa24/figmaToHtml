@@ -1,0 +1,22 @@
+input {
+  border: none;
+  outline: none;
+}
+
+/* Specific styles for input focus */
+input:focus,
+input[type="search"]:focus,
+#search:focus {
+  border: none !important;
+  outline: none !important;
+}
+@media (max-width: 768px) {
+  #all-categories-text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 640px) {
+  #categories {
+    display: none;
+  }
+}

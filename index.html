@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Contains tailwind convention classes for all sections -->
+    <link rel="stylesheet" href="./css/global.css" />
+
+    <!-- Contains Specific Media queries break points and styles for specific section -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="/css/searchBar.css" />
+    <link rel="stylesheet" href="./css/testimonial.css" />
+    <link rel="stylesheet" href="./css/mainSection.css" />
+    <link rel="stylesheet" href="./css/signUpBtn.css" />
+
+    <title>Quick Pik</title>
+  </head>
+  <body>
+    <div class="m-auto" style="max-width: 1440px; min-width: 640px">
+      <!-- header -->
+      <div
+        id="header"
+        role="header"
+        class="m-auto bg-white w-full h-40 flex items-center justify-between p-40"
+        style="min-width: 640px; max-width: 1440px"
+      >
+        <!-- 860px drop down menu -->
+        <div
+          id="drop-down"
+          class="flex flex-col items-center justify-center bg-dark-blue"
+        >
+          <div class="flex items-center pr-50">
+            <img
+              class="cursor-pointer ml-auto mt-30"
+              id="close-drop-down"
+              width="30"
+              height="30"
+              src="./images/close.svg"
+              alt="close"
+            />
+          </div>
+          <a
+            class="block text-center p-10 mt-10 no-underline font-f-outfit font-400 font-size-28 text-white"
+            href=""
+            >Home</a
+          >
+          <a
+            class="block text-center p-10 mt-10 no-underline font-f-outfit font-400 font-size-28 text-white"
+            href=""
+            >About us</a
+          >
+          <a
+            class="block text-center p-10 mt-10 no-underline font-f-outfit font-400 font-size-28 text-white"
+            href=""
+            >Products</a
+          >
+          <a
+            class="block text-center p-10 mt-10 no-underline font-f-outfit font-400 font-size-28 text-white"
+            href=""
+            >Services</a
+          >
+          <a
+            class="block text-center p-10 mt-10 no-underline font-f-outfit font-400 font-size-28 text-white"
+            href=""
+            >Contact us</a
+          >
+          <div class="flex items-center justify-center mt-20">
+            <button id="shop-btn" class="shop-btn">shop now</button>
+
+            <img
+              id="profile-img"
+              class="mr-12"
+              src="./images/profile.svg"
+              alt=""
+            />
+            <img id="cart-img" src="./images/cart.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- logo -->
+        <p
+          role="logo"
+          class="bg-white inline font-size-30 font-f-outfit font-500"
+        >
+          <span class="text-dark-blue">Quick</span
+          ><span class="text-lime-green">Pik</span>
+        </p>
+        <div role="navbar" id="navbar">
+          <a
+            class="p-10 no-underline font-f-outfit font-500 font-size-16 text-dark-blue"
+            href=""
+            >Home</a
+          >
+          <a
+            class="p-10 no-underline font-f-outfit font-500 font-size-16 text-dark-blue"
+            href=""
+            >About us</a
+          >
+          <a
+            class="p-10 no-underline font-f-outfit font-500 font-size-16 text-dark-blue"
+            href=""
+            >Products</a
+          >
+          <a
+            class="p-10 no-underline font-f-outfit font-500 font-size-16 text-dark-blue"
+            href=""
+            >Services</a
+          >
+          <a
+            class="p-10 no-underline font-f-outfit font-500 font-size-16 text-dark-blue"
+            href=""
+            >Contact us</a
+          >
+        </div>
+
+        <div class="flex items-center">
+          <!-- <button id="shop-btn">shop now</button> -->
+          <div class="btn-nav-bg">
+            <a href="#" class="btn">ShopNow</a>
+          </div>
+          <img
+            id="profile-img"
+            class="mr-12"
+            src="./images/profile.svg"
+            alt=""
+          />
+          <img id="cart-img" src="./images/cart.svg" alt="" />
+          <img id="menu-icon" src="./images/menu-icon.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- search and categories -->
+
+      <div
+        id="search"
+        role="search and categories"
+        class="w-full flex h-auto items-center justify-center"
+        style="
+          min-width: 640px;
+          max-width: 1440px;
+          background-color: #edf4f6;
+          padding: 13px 80px;
+        "
+      >
+        <div
+          id="categories"
+          class="radius-45 h-45 flex items-center justify-center bg-white border-1-white-solid flex-grow-1"
+          role="categories"
+        >
+          <img src="./images/span.svg" alt="" />
+          <p
+            id="all-categories-text"
+            class="font-500 text-center ml-8 font-f-outfit text-dark-blue inline font-size-15"
+          >
+            All Categories
+          </p>
+        </div>
+
+        <div
+          role="search-bar"
+          class="bg-white flex items-center justify-between border-1-white-solid h-47 ml-4 flex-grow-7 pl-18"
+          style="border-radius: 45px 0 0 45px"
+        >
+          <input
+            class="border-none w-full font-f-outfit text-dark-blue font-500 font-size-14 h-18"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="what are you looking for?"
+          />
+        </div>
+
+        <div role="search-button">
+          <img class="cursor-pointer" src="./images/searchFill.svg" alt="not" />
+        </div>
+      </div>
+
+      <!-- Main section -->
+      <div role="main-section" class="flex flex-col h-auto">
+        <div
+          role="first-div"
+          class="flex items-start justify-between flex-wrap"
+        >
+          <div role="left div" id="left-div" style="flex-grow: 1">
+            <div
+              role="contain-text"
+              class="bg-light-green radius-30 pr-20 pl-20 pb-10 pt-10"
+              style="background: #3cda5f0d; width: 405px"
+            >
+              <p class="text-dark-blue font-f-outfit font-400 font-size-15">
+                30% Off on groceries
+              </p>
+            </div>
+            <div id="order-text">
+              <span
+                id="order-text-1"
+                class="text-dark-blue font-f-outfit font-500 block mt-10"
+                >Shop smarter, not harder.</span
+              >
+            </div>
+            <div class="p-0 m-0 h-92 overflow-hidden">
+              <div
+                id="animate-text"
+                class="font-500 font-f-outfit font-size-72 mr-0 block"
+              >
+                <span class="text-nowrap pb-10 pt-10 text-red"
+                  >Get it ordered.</span
+                ><br />
+                <span class="text-nowrap pb-10 pt-10 text-purple"
+                  >Get it shipped.</span
+                ><br />
+                <span class="text-nowrap pb-10 pt-10 text-lime-green"
+                  >Get it delivered.</span
+                >
+              </div>
+            </div>
+            <p
+              id="save-time-text"
+              class="font-f-outfit font-400 text-black font-size-20 mt-20"
+            >
+              Save time, skip the lines. We've got you covered.
+            </p>
+            <button
+              id="shop-btn-2"
+              class="text-white cursor-pointer mt-50 p-10 mr-12 font-f-outfit font-500 font-size-20 radius-10 bg-lime-green"
+              style="
+                border: 2px solid;
+                border-image-source: linear-gradient(
+                  90deg,
+                  #999999 0%,
+                  #ffffff 100%
+                );
+                width: 154px;
+              "
+            >
+              shop now
+            </button>
+          </div>
+
+          <div
+            id="right-div"
+            class="flex flex-col"
+            role="right div"
+            style="max-width: 654.94px"
+          >
+            <img
+              id="img-one"
+              src="./images/main-sec-img.svg"
+              alt=""
+              style="height: auto"
+            />
+            <img id="img-two" src="./images/overlay-img.svg" alt="" />
+          </div>
+        </div>
+        <div role="second-div" style="padding-bottom: 40px">
+          <div class="flex items-center justify-center mb-60">
+            <p class="font-f-outfit font-600 font-size-20 text-dark-blue">
+              Trending Products
+            </p>
+            <img src="./images/ellipse.svg" alt="" />
+          </div>
+
+          <div
+            class="flex items-center justify-between flex-wrap"
+            style="padding: 0px 130px"
+          >
+            <img id="trend-img" src="./images/frame-27.png" alt="" />
+            <img id="trend-img" src="./images/frame-28.png" alt="" />
+            <img id="trend-img" src="./images/frame-29.png" alt="" />
+            <img id="trend-img" src="./images/frame-30.png" alt="" />
+            <img id="trend-img" src="./images/frame-31.png" alt="" />
+          </div>
+        </div>
+        <div
+          id="third-div"
+          role="third-div"
+          class="flex flex-col mt-20 mb-20"
+          style="margin: 0 auto"
+        >
+          <div
+            id="time-heading"
+            role="time-heading"
+            class="flex items-center justify-center gap-18 mt-20 mb-20"
+          >
+            <div>
+              <p class="font-f-outfit font-size-24 text-dark-blue font-700">
+                Deal Of The Week
+              </p>
+            </div>
+            <div id="time">
+              <div
+                role="days-count"
+                class="h-50 w-50 flex flex-col items-center justify-center radius-5 bg-lime-green"
+              >
+                <p class="font-f-outfit font-500 font-size-18 text-white">10</p>
+                <p class="font-f-outfit font-500 text-white font-size-10">
+                  Days
+                </p>
+              </div>
+              <div
+                role="hours-count"
+                class="h-50 w-50 flex flex-col items-center justify-center radius-5 bg-lime-green"
+              >
+                <p class="font-f-outfit font-500 font-size-18 text-white">19</p>
+                <p class="font-f-outfit font-500 text-white font-size-10">
+                  Hours
+                </p>
+              </div>
+              <div
+                role="minute-count"
+                class="h-50 w-50 flex flex-col items-center justify-center radius-5 bg-lime-green"
+              >
+                <p class="font-f-outfit font-500 font-size-18 text-white">59</p>
+                <p class="font-f-outfit font-500 text-white font-size-10">
+                  Minutes
+                </p>
+              </div>
+              <div
+                role="seconds-count"
+                class="h-50 w-50 flex flex-col items-center justify-center radius-5 bg-lime-green"
+              >
+                <p class="font-f-outfit font-500 font-size-18 text-white">57</p>
+                <p class="font-f-outfit font-500 text-white font-size-10">
+                  Seconds
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="items-description"
+            role="items-description"
+            class="flex flex-wrap gap-30"
+          >
+            <div
+              id="left-item"
+              role="left-item"
+              class="flex"
+              style="width: 607px; height: 305px"
+            >
+              <img src="./images/left-sale-img.png" alt="" />
+              <div
+                class="pt-30 pl-20 flex flex-col gap-18"
+                style="
+                  width: 305px;
+                  border: 1px solid #eaeaea;
+                  border-radius: 0px 10px 10px 0px;
+                "
+              >
+                <p
+                  style="line-height: 24px"
+                  class="font-f-outfit font-500 font-size-20 text-dark-blue"
+                >
+                  Elegant Perfumes
+                </p>
+                <p
+                  class="font-f-outfit font-500 font-size-20 text-dark-blue"
+                  style="line-height: 20px"
+                >
+                  $16.00
+                </p>
+                <div class="flex gap-18">
+                  <img src="./images/tick.svg" alt="" />
+                  <p class="font-f-outfit font-500 font-size-14 text-dark-blue">
+                    Long Lasting
+                  </p>
+                </div>
+                <div class="flex gap-18">
+                  <img src="./images/tick.svg" alt="" />
+                  <p class="font-f-outfit font-500 font-size-14 text-dark-blue">
+                    Affordable price
+                  </p>
+                </div>
+                <div class="flex gap-18">
+                  <img src="./images/tick.svg" alt="" />
+                  <p class="font-f-outfit font-500 font-size-14 text-dark-blue">
+                    Best Perfume
+                  </p>
+                </div>
+                <div
+                  style="width: 180px; background-color: #edf4f6"
+                  role="buy-now-button"
+                  class="flex items-center justify-center h-40 gap-20 radius-72"
+                >
+                  <img src="./images/buy-now-img.svg" alt="" />
+                  <p class="font-f-outfit font-500 font-size-14 text-dark-blue">
+                    Buy Now
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              role="right-item"
+              class="flex"
+              style="width: 607px; height: 305px"
+            >
+              <img width="302px" src="./images/left-sale-img.png" alt="" />
+              <div
+                class="pt-30 pl-20 flex flex-col gap-18"
+                style="
+                  width: 305px;
+                  border: 1px solid #eaeaea;
+                  border-radius: 0px 10px 10px 0px;
+                "
+              >
+                <p
+                  style="line-height: 24px"
+                  class="font-f-outfit font-500 font-size-20 text-dark-blue"
+                >
+                  Elegant Perfumes
+                </p>
+                <p
+                  class="font-f-outfit font-500 font-size-20 text-dark-blue"
+                  style="line-height: 20px"
+                >
+                  $16.00
+                </p>
+                <div class="flex gap-18">
+                  <img src="./images/tick.svg" alt="" />
+                  <p class="font-f-outfit font-500 font-size-14 text-dark-blue">
+                    Long Lasting
+                  </p>
+                </div>
+                <div class="flex gap-18">
+                  <img src="./images/tick.svg" alt="" />
+                  <p class="font-f-outfit font-500 font-size-14 text-dark-blue">
+                    Affordable price
+                  </p>
+                </div>
+                <div class="flex gap-18">
+                  <img src="./images/tick.svg" alt="" />
+                  <p class="font-f-outfit font-500 font-size-14 text-dark-blue">
+                    Best Perfume
+                  </p>
+                </div>
+                <div
+                  style="width: 180px; background-color: #edf4f6"
+                  role="buy-now-button"
+                  class="flex items-center justify-center h-40 radius-72 gap-20"
+                >
+                  <img src="./images/buy-now-img.svg" alt="" />
+                  <p class="font-f-outfit font-500 font-size-14 text-dark-blue">
+                    Buy Now
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          role="fourth-div"
+          id="third-div"
+          class="flex flex-col mt-20 mb-20"
+          style="margin: 0 auto"
+        >
+          <div
+            id="time-heading"
+            role="time-heading"
+            class="flex items-center justify-center gap-18"
+          >
+            <div class="mt-20">
+              <p
+                class="font-f-outfit font-size-24 text-dark-blue font-700 pt-20 pb-20"
+              >
+                Medical Products
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="items-description"
+            role="items-description"
+            class="flex flex-wrap gap-30"
+          >
+            <div
+              id="left-item"
+              role="left-medical-image"
+              class="flex flex-col pt-50 gap-20"
+              style="
+                width: 607px;
+                height: 270px;
+                gap: 20px;
+                padding-left: 60px;
+
+                background-image: url('./images/left-medical-img.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            >
+              <div
+                style="
+                  padding: 10px;
+                  border-radius: 10px;
+                  width: 83px;
+                  height: 20px;
+                  background-color: #f2971f;
+                  font-size: 12px;
+                "
+                class="flex items-center justify-center font-f-outfit font-400 text-white"
+              >
+                From $0.99
+              </div>
+
+              <div
+                class="font-f-outfit font-500 text-dark-blue font-size-28"
+                style="width: 147px"
+              >
+                Breathable Face Mask
+              </div>
+
+              <div
+                style="
+                  padding: 10px;
+                  border-radius: 72px;
+                  width: 109px;
+                  height: 40px;
+                  gap: 6px;
+                "
+                class="bg-dark-blue flex items-center justify-center"
+              >
+                <p
+                  style="font-size: 15px"
+                  class="font-f-outfit font-500 text-white"
+                >
+                  Shop now
+                </p>
+                <img src="./images/shop-now-icon.svg" alt="" />
+              </div>
+            </div>
+            <div
+              id="left-item"
+              role="right-medical-image"
+              class="flex flex-col"
+              style="
+                width: 607px;
+                height: 270px;
+                gap: 20px;
+                padding-left: 60px;
+                padding-top: 90px;
+                background-image: url('./images/right-medical-img.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            >
+              <div
+                class="font-f-outfit font-500 text-dark-blue font-size-28"
+                style="width: 250px"
+              >
+                Medicine pack Get it now 45% Off
+              </div>
+
+              <div
+                style="
+                  padding: 10px;
+                  border-radius: 72px;
+                  width: 109px;
+                  height: 40px;
+                  gap: 6px;
+                "
+                class="bg-dark-blue flex items-center justify-center"
+              >
+                <p
+                  style="font-size: 15px"
+                  class="font-f-outfit font-500 text-white"
+                >
+                  Shop now
+                </p>
+                <img src="./images/shop-now-icon.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="fifth-div" role="fifth-div">
+          <div
+            class="flex items-center justify-center"
+            role="delivery-animation"
+            style="
+              width: 500px;
+              height: 500px;
+              background-image: url(./images/polygon.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          >
+            <img src="./images/delivery.gif" alt="" />
+          </div>
+          <div style="width: 513px">
+            <span
+              class="font-f-outfit font-500 text-dark-blue"
+              style="font-size: 72px"
+            >
+              Big city savings, delivered to your
+            </span>
+            <span
+              style="font-size: 72px; color: #fd273b"
+              class="font-f-outfit font-500 text-dark-blue"
+              >doorstep.</span
+            >
+          </div>
+        </div>
+        <p
+          class="mb-90 text-center font-f-outfit font-600 text-dark-blue font-size-24"
+        >
+          Our Actions speaks louder than WORDS
+        </p>
+      </div>
+
+      <!--testimonial  -->
+      <div
+        role="testimonial-section"
+        class="flex flex-col h-auto bg-light-green"
+        style="background-image: url(./images/testimonial-bg-img.svg)"
+      >
+        <div
+          id="upper-div"
+          role="buttons and title testiminials"
+          class="flex flex-wrap justify-between pt-50 pr-80 pl-130"
+        >
+          <p
+            style="width: auto"
+            id="title-testimonial"
+            class="font-500 font-f-outfit font-size-48"
+          >
+            Unlock the secrets of satisfied customers.
+          </p>
+          <div id="navigation-arrow" class="flex items-end gap-20 pb-20">
+            <img src="./images/left-arrow.svg" alt="" />
+            <img src="./images/right-arrow.svg" alt="" />
+          </div>
+        </div>
+
+        <div
+          role="testimonials-card"
+          id="testiminials-card"
+          class="flex items-start justify-center gap-25 flex-wrap flex-grow-2"
+        >
+          <!-- testimonial-1 -->
+          <div
+            role="testimonial-1"
+            class="bg-white flex flex-col radius-12 p-47 gap-35"
+            style="
+              height: 358px;
+              box-shadow: 0px 12px 32px 0px #0000001f;
+              max-width: 360px;
+              min-width: 360px;
+            "
+          >
+            <p
+              class="font-400 font-f-open-sans text font-size-23"
+              style="max-width: 270px"
+            >
+              "Never going back to waiting in lines! Shop smarter, get it
+              delivered with QuickPik. It's that simple."
+            </p>
+            <div class="flex items-center gap-20" style="max-width: 270px">
+              <img src="./images/test-3.svg" alt="" />
+              <div class="flex flex-col gap-7">
+                <p class="font-f-outfit font-500 font-size-16">
+                  Albus Dumbledore
+                </p>
+                <p
+                  class="text-dark-blue font-400 font-f-open-sans font-size-14"
+                >
+                  Manager @ Howarts
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- testimonial-2 -->
+          <div
+            role="testimonial-2"
+            class="bg-white flex flex-col radius-12 p-47 gap-35"
+            style="
+              height: 394px;
+              box-shadow: 0px 12px 32px 0px #0000001f;
+              max-width: 360px;
+              min-width: 360px;
+            "
+          >
+            <p
+              class="text-black font-f-open-sans font-size-24 font-400"
+              style="max-width: 270px"
+            >
+              "Wide selection, even in my small town! Found everything I needed
+              for my birthday party with just a few clicks. Thanks, QuickPik!"
+            </p>
+            <div class="flex items-center" style="max-width: 270px; gap: 20px">
+              <img src="./images/test-3.svg" alt="" />
+              <div class="flex flex-col" style="gap: 7px">
+                <p class="font-f-outfit font-500 font-size-16">
+                  Albus Dumbledore
+                </p>
+                <p
+                  class="text-dark-blue font-f-open-sans font-400 font-size-14"
+                >
+                  Manager @ Howarts
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonial-3 -->
+          <div
+            role="testimonial-3"
+            class="bg-white flex flex-col radius-12 p-47 gap-35"
+            style="
+              height: 358px;
+              box-shadow: 0px 12px 32px 0px #0000001f;
+              max-width: 360px;
+              min-width: 360px;
+            "
+          >
+            <p class="font-400 font-size-24 font-f-open-sans text-black">
+              "Lifesaver for busy families! Fresh groceries delivered in a flash
+              - dinner's on the table, thanks QuickPik!”
+            </p>
+            <div class="flex items-center gap-20" style="max-width: 270px">
+              <img src="./images/test-3.svg" alt="" />
+              <div class="flex flex-col gap-7">
+                <p class="font-f-outfit font-500 font-size-16">
+                  Albus Dumbledore
+                </p>
+                <p
+                  class="text-dark-blue font-400 font-size-14 font-f-open-sans"
+                >
+                  Manager @ Howarts
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sign Up btn -->
+      <div
+        role="signUp-btn"
+        class="flex flex-wrap items-center mt-30 mb-30 p-30 h-auto"
+        style="
+          box-shadow: 0px 4px 30px 0px #99f5ad1a;
+          background: linear-gradient(
+            88.81deg,
+            rgba(60, 218, 95, 0.3) -0.15%,
+            #f3f8ff 33.24%,
+            #ffffff 64.13%,
+            #f4f9ff 78.87%,
+            rgba(60, 218, 95, 0.3) 109.42%
+          );
+        "
+      >
+        <div
+          class="flex items-center justify-center flex-grow-1"
+          style="min-width: 200px"
+        >
+          <img src="./images/male-courier.svg" alt="" />
+        </div>
+
+        <div
+          id="signUp-text-button"
+          class="flex items-center justify-center flex-grow-1 pr-50"
+          style="min-width: 250px"
+        >
+          <div
+            id="parent-SignUp-text-button"
+            class="flex flex-col items-start justify-center gap-40"
+          >
+            <p
+              id="signUp-text"
+              class="font-600 font-f-outfit font-size-42"
+              style="max-width: 539px"
+            >
+              SignUp For Exclusive Offers And Discounts
+            </p>
+            <button
+              id="signUp-btn"
+              class="border-none radius-8 cursor-pointer bg-lime-green text-white font-f-outfit font-500 font-size-20"
+              style="width: 250px; padding: 18px 22px 18px 22px"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div role="footer" class="bg-dark-blue flex flex-wrap h-auto p-50">
+        <div
+          role="social-icons"
+          class="flex flex-col justify-center items-center flex-grow-1 min-w-200 h-inherit font-size-30"
+        >
+          <div class="flex flex-col items-start justify-center pt-50">
+            <p class="inline font-f-outfit font-500 font-size-51">
+              <span class="text-white">Quick</span
+              ><span class="text-lime-green">Pik</span>
+            </p>
+            <p
+              id="footer-text"
+              class="font-f-outfit font-500 text-white mt-20 mb-20 font-size-24 w-279"
+            >
+              Shop smarter, not harder. Get it delivered.
+            </p>
+            <div class="mb-90 py-10 px-0">
+              <img src="./images/instagram.svg" alt="" />
+              <img src="./images/twitter.svg" alt="" />
+              <img src="./images/youtube.svg" alt="" />
+              <img src="./images/facebook.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          role="quick-link"
+          class="pt-50 gap-18 flex flex-col justify-center items-center flex-grow-1 min-w-200 h-inherit font-size-30"
+        >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Quick Links</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Home</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >AboutUs</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Services</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Products</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Contact Us</a
+          >
+        </div>
+
+        <div
+          role="locations"
+          class="pt-50 gap-18 flex flex-col justify-center items-center flex-grow-1 min-w-200 h-inherit font-size-30"
+        >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Locations</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Mumbai</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Pune</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Nagpur</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Banglore</a
+          >
+          <a
+            href=""
+            class="text-white font-f-outfit font-size-24 font-500 no-underline"
+            >Goa</a
+          >
+        </div>
+
+        <div
+          role="footer-gif"
+          class="pt-50 gap-18 flex flex-col justify-center items-center flex-grow-1 min-w-200 h-inherit font-size-30"
+        >
+          <img width="300" height="300" src="./images/girl.gif" alt="" />
+        </div>
+      </div>
+
+      <div
+        role="copy-right-text"
+        id="copy-right"
+        class="bg-dark-blue flex items-center justify-center text-white font-f-outfit font-500 font-size-24 p-10"
+      >
+        @All Rights Reserved QuickPik
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

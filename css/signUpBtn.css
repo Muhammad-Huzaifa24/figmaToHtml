@@ -1,0 +1,12 @@
+@media (max-width: 640px) {
+  #signUp-text-button {
+    padding-right: 0;
+    text-align: center;
+  }
+  #signUp-text {
+    padding-top: 40px;
+  }
+  #parent-SignUp-text-button {
+    align-items: center;
+  }
+}
